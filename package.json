@@ -1,0 +1,47 @@
+{
+  "name": "apl-expression-coding",
+  "version": "1.0.0",
+  "description": "Write programs in a textual manner by writing and matching expressions line by line",
+  "keywords": [
+    "expression",
+    "code",
+    "coding",
+    "language"
+  ],
+  "homepage": "https://github.com/andrewlowndes/expression-coding",
+  "main": "lib/index.js",
+  "repository": "github:andrewlowndes/expression-coding",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepare-env": "node ./scripts/prepare-env",
+    "watch": "tsc -w -p ./config/tsconfig.json",
+    "build": "webpack --config ./config/webpack.config.js",
+    "build-lib": "webpack --config ./config/webpack-build.config.js && tsc -p ./config/build.tsconfig.json",
+    "dev": "http-server build -o",
+    "dist": "http-server dist -o",
+    "test": "karma start config/karma.conf.js --browsers ChromeHeadless --single-run",
+    "test-debug": "karma start config/karma.conf.js",
+    "coverage": "http-server coverage -o"
+  },
+  "author": "Andrew Lowndes",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.9",
+    "http-server": "^0.11.1",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-typescript": "^3.0.13",
+    "systemjs": "^0.21.4",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.3",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "es6-shim": "^0.35.3",
+    "normalize.css": "^8.0.0"
+  }
+}

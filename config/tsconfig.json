@@ -1,0 +1,20 @@
+{
+  "extends": "./base.tsconfig.json",
+  "compilerOptions": {
+    "module": "system",
+    "removeComments": true,
+    "outDir": "../build/js",
+    "sourceMap": true,
+    "sourceRoot": "/src",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "preserveConstEnums": true
+  },
+  "include": [
+    "../src/**/*.ts"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../src/**/*.spec.ts"
+  ]
+}

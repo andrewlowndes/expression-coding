@@ -1,0 +1,16 @@
+[Tt]humbs.db
+*.DS_Store
+
+.vscode
+.history
+build/assets
+build/config
+build/js
+build/src
+build/node_modules
+coverage
+dist/assets
+dist/app.js
+dist/vendor.js
+dist/node_modules
+node_modules

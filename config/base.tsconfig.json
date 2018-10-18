@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "target": "es5",
+    "lib": ["dom", "es6"],
+    "jsx": "react",
+    "jsxFactory": "createElement"
+  },
+  "include": [
+    "../src/**/*.ts"
+  ]
+}
