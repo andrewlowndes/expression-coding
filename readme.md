@@ -58,6 +58,17 @@ concat {a} and {b} to give {c}
 print {a}
 ```
 
+## Interactive web frontend
+
+To experiment with this in an interactive html page, clone this repo and run the following:
+
+```
+npm i
+npm run prepare-env
+tsc -p ./config/tsconfig.json
+npm run dev
+```
+
 ## How to use this library
 
 Install via `npm i apl-expression-coding` then
