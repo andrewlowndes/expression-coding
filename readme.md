@@ -73,7 +73,7 @@ npm run dev
 
 Install via `npm i apl-expression-coding` then
 
-```
+```javascript
 import { runCode } from 'apl-expression-coding';
 
 const output = runCode(myExpressionsCodeStr);
@@ -83,7 +83,7 @@ console.log(output);
 
 Note: the common library (listed above) is not included by default, to add simply import and run it with your code, via:
 
-```
+```javascript
 import { runCode, lib } from 'apl-expression-coding';
 
 const output = runCode(lib + myExpressionsCodeStr);
