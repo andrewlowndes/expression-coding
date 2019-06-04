@@ -1,5 +1,8 @@
 # Expression Coding
-Write programs in a textual manner by writing and matching expressions line by line
+Write programs in a textual manner by writing and matching expressions line by line.
+
+## Interactive Demo
+[Try the online demo](https://andrewlowndes.github.io/expression-coding/) and see how easy it is to start coding
 
 ## Features
 - Multiple matching strings for a definition
