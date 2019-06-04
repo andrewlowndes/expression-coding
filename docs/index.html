@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <style>
+      #input {
+        width: 100%; 
+        height: 500px; 
+        box-sizing: border-box;
+      }
+      
+      #output {
+        white-space: pre; 
+        border: 1px solid #999; 
+        width: 100%; 
+        height: 300px;
+      }
+    </style>
+    
+    <script src="../lib/apl-expression-coding.min.js"></script>
+    
+    <script>
+      window.onload = function() {
+        var $ = document.getElementById.bind(document);
+        
+        var run = $("run");
+          input = $("input");
+          output = $("output");
+        
+        run.addEventListener("click", function() {
+          output.innerHTML = runCode(lib + input.value);
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Interactive expression coding</h1>
+    
+    <p>Type some expression code below and click on the run button to execute</p>
+  
+  <textarea spellcheck="false" id="input">
+define: percentage of {a} to {b} is {d}
+a / b = d
+d * 100 = c
+concat c and % to give d
+
+main:
+percentage of 5 to 25 is c
+print c
+c * 16 = d
+percentage of c to d is e
+print e
+</textarea>
+    
+    <button id="run">Run</button>
+    
+    <div id="output"></div>
+  </body>
+</html>
