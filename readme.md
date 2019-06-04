@@ -65,7 +65,6 @@ To experiment with this in an interactive html page, clone this repo and run the
 ```
 npm i
 npm run prepare-env
-tsc -p ./config/tsconfig.json
 npm run dev
 ```
 
